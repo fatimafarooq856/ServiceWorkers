@@ -1,0 +1,121 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Offline Static Site</title>
+    <link rel="stylesheet" href="~/css/global.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+    <script src="~/Js/Info.js"></script>
+</head>
+    <body>
+       <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="#speakers">
+                        <svg>
+                            <use xlink:href="#icons-01"></use>
+                        </svg>
+                        <span>Speakers</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#schedule">
+                        <svg>
+                            <use xlink:href="#icons-02"></use>
+                        </svg>
+                        <span>Schedule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tickets">
+                        <svg>
+                            <use xlink:href="#icons-03"></use>
+                        </svg>
+                        <span>Tickets</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+       <main class="tabs">
+           <div class="tab" id="speakers">
+               <h1>Speakers</h1>
+               <ul class="speaker-list">
+                   <li>
+                       👨‍🍳
+                       <span>Jimmy Saladcakes</span>
+                   </li>
+                   <li>
+                       👩🏻‍💻
+                       <span>Susan Shimmer</span>
+                   </li>
+                   <li>
+                       👩🏽‍🌾
+                       <span>Isabella Whentimes</span>
+                   </li>
+                   <li>
+                       👦🏿
+                       <span>Blake Badda</span>
+                   </li>
+                   <li>
+                       👨‍🍳
+                       <span>Jimmy Saladcakes</span>
+                   </li>
+                   <li>
+                       👨🏽‍🎤
+                       <span>Abayomi Moscone</span>
+                   </li>
+               </ul>
+           </div>
+
+           <div class="tab active" id="schedule">
+
+               <h1>Schedule</h1>
+
+               <dl class="schedule">
+                   <dt>9:00 AM - Breakfast</dt>
+                   <dd>🥞 Delicious Pancakes</dd>
+
+                   <dt>10:00 AM - Speakers</dt>
+                   <dd>📈 Learning Happens</dd>
+
+                   <dt>8:00 PM - Party</dt>
+                   <dd>💤 Go To Bed</dd>
+               </dl>
+
+           </div>
+           <button onclick="GetData()">Get</button>
+           <div >
+               <table style="width: 100% " id="table">
+                   <tr>
+                       <th>Firstname</th>
+                       <th>Lastname</th>
+                       <th>Age</th>
+                   </tr>
+               </table>
+               </div><br /><br /><br />
+               <div>
+                   Name: &nbsp;<input id="name" /><br /><br />
+                   Email: &nbsp;<input id="email" /><br /><br />
+                   PhoneNumber: &nbsp;<input id="phone" /><br /><br />
+                   <button onclick="SubmitData()">Submit</button>
+               </div>
+               <div class="tab" id="tickets">
+
+                   <h1>Tickets</h1>
+
+                   <p>Going fast <a href="#0">buy buy buy!</a></p>
+
+               </div>
+
+       </main>
+
+        <!-- <script src="js/jquery.js"></script> -->
+        
+        <script src="~/global.js"></script>
+
+    </body>
+
+</html>
